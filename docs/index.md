@@ -26,5 +26,5 @@ ASU, EGR 314, Prof. Nichols
 
 ## Ideation and Concept Generation
 
-[Ideation and Concept Generation Page](Ideation_and_Concept_Generation.md)
+[Ideation and Concept Generation Page](Ideation-and-Concept-Generation.md)
 
