@@ -16,7 +16,8 @@ title: Ideation and Concept Generation
 
 ## Concept Sketch
 
-![Ideation and Concept Generation Page](EGR314-2025-S-309.github.io/docs/Images/Spinning-Top_Isometric.png)
+![Spinning Top Isometric View](EGR314-2025-S-309.github.io/docs/Images/Spinning-Top_Isometric.png)
+![Spinning Top Bottom View](EGR314-2025-S-309.github.io/docs/Images/Spinning-Top_Bottom.png)
 
 ## Presentation
 
