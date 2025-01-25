@@ -23,3 +23,8 @@ Preperation Date: January 16
 Spring 2025
 
 ASU, EGR 314, Prof. Nichols
+
+## Ideation and Concept Generation
+
+[Ideation and Concept Generation Page](Ideation_and_Concept_Generation.md)
+
