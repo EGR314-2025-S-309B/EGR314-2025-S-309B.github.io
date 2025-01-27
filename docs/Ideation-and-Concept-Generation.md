@@ -14,89 +14,9 @@ For this project, we believe that our target audience is going to be students an
 
 ## Idea Generation
 
-List of Initial Ideas
-
-- Gesture Controlled Car
-- Tennis Ball Shooter
-- Climbing Robot
-- Tank Robot
-- Remote Controlled Robot
-- Submarine Robot
-- Articulated Robot Hand
-- Wall Following Robot
-- Maze Solving Robot
-- Wireless Picture Display
-- Spinning Top
-- Object Tracking Robot
-- Garage Parking Assistant
-- Bike Speed Monitor
-- Gesture Controlled Drone
-- Automatic Webcam Tracker
-- Interactive Fidget Toy
-- Customizable Slot Machine
-- Ball Balancing Robot
-- Hand Following Robot
-- Interactive Light Sculpture
-- Obstacle Climbing Robot
-- Baby Monitor
-- Cargo Carrying Robot
-- Portable Air Quality Monitor
-- Robot Football Kicker
-- Robot Soccer Ball Kicker
-- Robot Baseball Pitcher
-- Interactive Fidget Spinner
-- Wireless Speed Monitor
-- Smart Recycling Bin
-- Robot Arm with Vision
-- GPS Device
-- Automatic Trash Collector
-- 3D Object Scanner
-- Smart Kite
-- Voice Activated RC Car
-- Robotic Chess Player
-- Room Mapping Robot
-- Rope Climbing Robot
-- Basketball Shooting Robot
-- Item Sorting Robot
-- Edge Detection Robot
-- Color-Sorting Robot
-- Solar Tracker
-- Self Balancing Robot
-- Heart Rate Monitor
-- Wireless Door Lock
-- Voice Controlled Robot
-- Wireless Automatic Trash Can
-- Gesture Controlled Robot
-- Wireless Doorbell
-- Digital Compass
-- Gesture Mimicking Robot
-- Smart Alarm Clock
-- Automatic Curtain Closer
-- Smart Home Automation
-- Automatic Door Opener
-- Motion Activated Light
-- Remote Control Dancing Robot
-- Jenga Robot
-- Fall Detection Robot
-- Mini Battle Bots
-- Transformers Style Robot
-- Autonomous Vacuum Robot
-- Smart Plant Watering System
-- Line Following Train System
-- Underwater Drone for Exploration
-- Robotic Arm for 3D Printing
-- Automated Pet Feeder
-- Trash Can with Object Recognition
-- Solar-Powered RC Car
-- Personal Assistant Robot
-- Gesture-Controlled Wheelchair
-- Automated Traffic Light System
-- Robotic Window Cleaner
-- Interactive Whiteboard Robot
-- Drone-Based Delivery System
-- Smart Inventory Management Robot
-- AI-Powered Chess Robot
-- Robotic Crane
+| Initial Ideas |
+| --- |
+| Line Following Robot<br>Obstacle Avoiding Robot<br>Trash Collecting Robot<br>RC Car<br>DIY Power Bank<br>Gesture Controlled Lights<br>Digital Dice<br>Music Visualizer<br>Drone<br>Face Tracking Robot<br>Drawing Robot<br>Trash Sorting Robot<br>Animatronic<br>Slot Machine<br>Cleaning Robot<br>Robot Dog<br>Delivery Drone<br>Balancing Robot<br>Firefighting Robot<br>Gesture Controlled Car<br>Tennis Ball Shooter<br>Climbing Robot<br>Tank Robot<br>Remote Controlled Robot<br>Submarine Robot<br>Articulated Robot Hand<br>Wall Following Robot<br>Maze Solving Robot<br>Wireless Picture Display<br>Spinning Top<br>Object Tracking Robot<br>Garage Parking Assistant<br>Bike Speed Monitor<br>Gesture Controlled Drone<br>Automatic Webcam Tracker<br>Interactive Fidget Toy<br>Customizable Slot Machine<br>Ball Balancing Robot<br>Hand Following Robot<br>Interactive Light Sculpture<br>Obstacle Climbing Robot<br>Baby Monitor<br>Cargo Carrying Robot<br>Portable Air Quality Monitor<br>Robot Football Kicker<br>Robot Soccer Ball Kicker<br>Robot Baseball Pitcher<br>Interactive Fidget Spinner<br>Wireless Speed Monitor<br>Smart Recycling Bin<br>Robot Arm with Vision<br>GPS Device<br>Automatic Trash Collector<br>3D Object Scanner<br>Smart Kite<br>Voice Activated RC Car<br>Robotic Chess Player<br>Room Mapping Robot<br>Rope Climbing Robot<br>Basketball Shooting Robot<br>Item Sorting Robot<br>Edge Detection Robot<br>Color-Sorting Robot<br>Solar Tracker<br>Self Balancing Robot<br>Heart Rate Monitor<br>Wireless Door Lock<br>Voice Controlled Robot<br>Wireless Automatic Trash Can<br>Gesture Controlled Robot<br>Wireless Doorbell<br>Digital Compass<br>Gesture Mimicking Robot<br>Smart Alarm Clock<br>Automatic Curtain Closer<br>Smart Home Automation<br>Automatic Door Opener<br>Motion Activated Light<br>Remote Control Dancing Robot<br>Jenga Robot<br>Fall Detection Robot<br>Mini Battle Bots<br>Transformers Style Robot<br>Autonomous Vacuum Robot<br>Smart Plant Watering System<br>Line Following Train System<br>Underwater Drone for Exploration<br>Robotic Arm for 3D Printing<br>Automated Pet Feeder<br>Trash Can with Object Recognition<br>Solar-Powered RC Car<br>Personal Assistant Robot<br>Gesture-Controlled Wheelchair<br>Automated Traffic Light System<br>Robotic Window<br>Cleaner Interactive Whiteboard<br>Robot Drone-Based Delivery System<br>Smart Inventory Management Robot<br>AI-Powered Chess Robot<br>Robotic Crane |
 
 ## Sorted Ideas
 
@@ -106,52 +26,15 @@ List of Initial Ideas
 
 We narrowed our ideas into a handfull that we were interested in making.
 
-- Line Following Robot
-- Obstacle Avoiding Robot
-- Balancing Robot
-- Climbing Robot
-- Tank Robot
-- Articulated Robot Hand
-- Wall Following Robot
-- Maze Solving Robot
-- Object Tracking Robot
-- Ball Balancing Robot
-- Robot Chess Player
-- Rope Climbing Robot
-- Item Sorting Robot
-- Self Balancing Robot
-- Wireless Automatic Trash Can
-- Mini Battle Bots
-- RC Car
-- Digital Dice
-- Spinning Top
-- Interactive Fidget Toy
-- Bike Speed Monitor
-- Automatic Webcam Tracker
-- Baby Monitor
-- Wireless Speed Monitor
-- Smart Recycling Bin
-- GPS Device
-- Wireless Automatic Trash
-- Wireless Door Lock
-- Wireless Doorbell
-- Digital Compass
-- Smart Alarm Clock
-- Automatic Curtain Closer
+| Interesting Ideas |
+| --- |
+| Line Following Robot<br>Obstacle Avoiding Robot<br>Balancing Robot<br>Climbing Robot<br>Tank Robot<br>Articulated Robot Hand<br>Wall Following Robot<br>Maze Solving Robot<br>Object Tracking Robot<br>Ball Balancing Robot<br>Robot Chess Player<br>Rope Climbing Robot<br>Item Sorting Robot<br>Self Balancing Robot<br>Wireless Automatic Trash Can<br>Mini Battle Bots<br>RC Car<br>Digital Dice<br>Spinning Top<br>Interactive Fidget Toy<br>Bike Speed Monitor<br>Automatic Webcam Tracker<br>Baby Monitor<br>Wireless Speed Monitor<br>Smart Recycling Bin<br>GPS Device<br>Wireless Automatic Trash Can<br>Wireless Door Lock<br>Wireless Doorbell<br>Digital Compass<br>Smart Alarm Clock<br>Automatic Curtain Closer |
 
 With these ideas, we narrowed it down once again into a couple ideas that were best for our users.
 
-- Line Following Robot
-- Balancing Robot
-- Tank Robot
-- Maze Solving Robot
-- Robot Chess Player
-- Self Balancing Robot
-- Mini Battle Bots
-- RC Car
-- Digital Dice
-- Spinning Top
-- Interactive Fidget Toy
+| Tailored for Users |
+| --- |
+| Line Following Robot<br>Balancing Robot<br>Tank Robot<br>Maze Solving Robot<br>Robot Chess Player<br>Self Balancing Robot<br>Mini Battle Bots<br>RC Car<br>Digital Dice<br>Spinning Top<br>Interactive Fidget Toy |
 
 Our final decision was a Spinning Top. We felt this was the most interesting for our users and practical for us to make within the semester. 
 
