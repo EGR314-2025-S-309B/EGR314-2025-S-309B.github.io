@@ -2,22 +2,167 @@
 title: Ideation and Concept Generation
 ---
 
-## About Our Exhibits
+## About Our Exhibit
 
+Goal of our Exhibit
 
+The overall goal of our exhibit is to be able to show a wide group of people a new physical concept or design that can teach them something new, or expand their knowledge on the way that things in our world work that they may not know much about. This will also need to involve the user not just observing our exhibit, but being able to interact with it to better understand the concept. Users also need to be able to be interested enough with our product to give it the time to discover what it has to offer, so the exhibit will need to catch the eye over other exhibits in the area. Finally, our exhibit will need to have a simple user interface that is not only easy to use, but is intuitive and has a natural flow.
+
+Target Audience
+
+For this project, we believe that our target audience is going to be students and adults with a basic high school education. Since our showcase will be with ASU, the audience will have a varying amount of people with different backgrounds and involvement with the school. While some of the users may have done many projects or designs similar to what we may have, most of these people will likely have a basic education and may have numerous misconceptions we can inform on or interests that we can pique with our design.
 
 ## Idea Generation
 
+List of Initial Ideas
 
+- Gesture Controlled Car
+- Tennis Ball Shooter
+- Climbing Robot
+- Tank Robot
+- Remote Controlled Robot
+- Submarine Robot
+- Articulated Robot Hand
+- Wall Following Robot
+- Maze Solving Robot
+- Wireless Picture Display
+- Spinning Top
+- Object Tracking Robot
+- Garage Parking Assistant
+- Bike Speed Monitor
+- Gesture Controlled Drone
+- Automatic Webcam Tracker
+- Interactive Fidget Toy
+- Customizable Slot Machine
+- Ball Balancing Robot
+- Hand Following Robot
+- Interactive Light Sculpture
+- Obstacle Climbing Robot
+- Baby Monitor
+- Cargo Carrying Robot
+- Portable Air Quality Monitor
+- Robot Football Kicker
+- Robot Soccer Ball Kicker
+- Robot Baseball Pitcher
+- Interactive Fidget Spinner
+- Wireless Speed Monitor
+- Smart Recycling Bin
+- Robot Arm with Vision
+- GPS Device
+- Automatic Trash Collector
+- 3D Object Scanner
+- Smart Kite
+- Voice Activated RC Car
+- Robotic Chess Player
+- Room Mapping Robot
+- Rope Climbing Robot
+- Basketball Shooting Robot
+- Item Sorting Robot
+- Edge Detection Robot
+- Color-Sorting Robot
+- Solar Tracker
+- Self Balancing Robot
+- Heart Rate Monitor
+- Wireless Door Lock
+- Voice Controlled Robot
+- Wireless Automatic Trash Can
+- Gesture Controlled Robot
+- Wireless Doorbell
+- Digital Compass
+- Gesture Mimicking Robot
+- Smart Alarm Clock
+- Automatic Curtain Closer
+- Smart Home Automation
+- Automatic Door Opener
+- Motion Activated Light
+- Remote Control Dancing Robot
+- Jenga Robot
+- Fall Detection Robot
+- Mini Battle Bots
+- Transformers Style Robot
+- Autonomous Vacuum Robot
+- Smart Plant Watering System
+- Line Following Train System
+- Underwater Drone for Exploration
+- Robotic Arm for 3D Printing
+- Automated Pet Feeder
+- Trash Can with Object Recognition
+- Solar-Powered RC Car
+- Personal Assistant Robot
+- Gesture-Controlled Wheelchair
+- Automated Traffic Light System
+- Robotic Window Cleaner
+- Interactive Whiteboard Robot
+- Drone-Based Delivery System
+- Smart Inventory Management Robot
+- AI-Powered Chess Robot
+- Robotic Crane
 
-## Brainstorm
+## Sorted Ideas
 
+| Robots | Toys | Device |
+|:---:|:---:|:---:|
+| Line Following Robot<br>Obstacle Avoiding Robot<br>Trash Collecting Robot<br>Face Tracking<br>Robot Drawing<br>Robot Trash Sorting<br>Robot Cleaning<br>Robot Robot<br>Dog Balancing<br>Robot Firefighting<br>Robot Gesture Controlled<br>Car Tennis Ball Shooter<br>Climbing Robot<br>Tank Robot<br>Remote Controlled Robot<br>Submarine Robot<br>Articulated Robot Hand<br>Wall Following Robot<br>Maze Solving Robot<br>Object Tracking Robot<br>Ball Balancing Robot<br>Hand Following Robot<br>Obstacle Climbing Robot<br>Cargo Carrying Robot<br>Robot Football Kicker<br>Robot Soccer Ball Kicker<br>Robot Baseball Pitcher<br>Robot Arm with Vision<br>Robot Chess Player<br>Room Mapping Robot<br>Rope Climbing Robot<br>Basketball Shooting Robot<br>Item Sorting Robot<br>Edge Detection Robot<br>Color-Sorting Robot<br>Self Balancing Robot<br>Voice Controlled Robot<br>Gesture Controlled Robot<br>Gesture Mimicking Robot<br>Fall Detection Robot<br>Mini Battle Bots<br>Transformers Style Robot | RC Car<br>Digital Dice<br>Drone<br>Animatronic<br>Slot Machine<br>Delivery Drone<br>Gesture Controlled Car<br>Tennis Ball Shooter<br>Spinning Top<br>Gesture Controlled Drone<br>Interactive Fidget Toy<br>Customizable Slot Machine<br>Interactive Light Sculpture<br>Smart Kite<br>Voice Activated RC Car<br>Remote Control Dancing Robot<br>Jenga Robot | DIY Power Bank<br>Gesture Controlled Lights<br>Music Visualizer<br>Wireless Picture Display<br>Garage Parking Assistant<br>Bike Speed Monitor<br>Automatic Webcam Tracker<br>Baby Monitor<br>Portable Air Quality Monitor<br>Wireless Speed Monitor<br>Smart Recycling Bin<br>GPS Device<br>Wireless Automatic Trash Can<br>3D Object Scanner<br>Wireless Door Lock<br>Wireless Doorbell<br>Digital Compass<br>Smart Alarm Clock<br>Automatic Curtain Closer<br>Smart Home Automation<br>Automatic Door Opener<br>Motion Activated Light<br>Automatic Trash Collector |
 
+We narrowed our ideas into a handfull that we were interested in making.
+
+- Line Following Robot
+- Obstacle Avoiding Robot
+- Balancing Robot
+- Climbing Robot
+- Tank Robot
+- Articulated Robot Hand
+- Wall Following Robot
+- Maze Solving Robot
+- Object Tracking Robot
+- Ball Balancing Robot
+- Robot Chess Player
+- Rope Climbing Robot
+- Item Sorting Robot
+- Self Balancing Robot
+- Wireless Automatic Trash Can
+- Mini Battle Bots
+- RC Car
+- Digital Dice
+- Spinning Top
+- Interactive Fidget Toy
+- Bike Speed Monitor
+- Automatic Webcam Tracker
+- Baby Monitor
+- Wireless Speed Monitor
+- Smart Recycling Bin
+- GPS Device
+- Wireless Automatic Trash
+- Wireless Door Lock
+- Wireless Doorbell
+- Digital Compass
+- Smart Alarm Clock
+- Automatic Curtain Closer
+
+With these ideas, we narrowed it down once again into a couple ideas that were best for our users.
+
+- Line Following Robot
+- Balancing Robot
+- Tank Robot
+- Maze Solving Robot
+- Robot Chess Player
+- Self Balancing Robot
+- Mini Battle Bots
+- RC Car
+- Digital Dice
+- Spinning Top
+- Interactive Fidget Toy
+
+Our final decision was a Spinning Top. We felt this was the most interesting for our users and practical for us to make within the semester. 
 
 ## Concept Sketch
 
 ![Image](https://github.com/user-attachments/assets/e88cc80e-e3a5-41bd-b5ed-ae2a80dd601f)
 ![Image](https://github.com/user-attachments/assets/44c34ee0-1d02-4923-949c-2db4f0bb24dd)
+
+The main highlights that we can see from the CAD model of our spinning top exhibit are the slot for a removable battery, the inner shell that includes PCB and ribbon cables slots on the brim, the motor holder at the bottom, and the outer shell. The slot for the removable battery is placed at the center of the spinning top to ensure that the center of mass remains as close to the center as possible. This battery would be powering all PCB components, as well as the motor that makes the top spin. The inner shell is designed to hold all necessary PCB components comfortably and ensures minimal changes to these parts during the top spinning. This area also has ribbon cables on the brim to ensure steady connections. The motor holder is located at the bottom of the spinning top and allows the top to spin. We will also be able to track the speed of this motor with the other components at the top. Finally, the outer shell is designed to be aerodynamic in shape to make sure that the top can spin for a good time and doesn’t go off track unexpectedly.
+
+As far as our functionality goes, we will have a two-way internet connection, human interface, sensors, and actuators. Two-way communication will be important when it comes to sending signals to the top to make it spin, as well as sending the speed of the top back to the user through this connection. The human interface will allow the user to make the top spin via a screen and buttons that will be separate from our spinning top. The sensors will be tracking how fast our top is spinning and sending this information back to the user. Finally, the actuator at the bottom of the spinning top will make the top spin. As far as our device is concerned, we will take steps to make sure that it is easier to use. Some of these will include detailed step-by-step instructions that are simple and easy to follow, as well as a description of what the user is going to be looking at and experiencing in our exhibit. We will also add symbols to both our spinning top and our user interface that explain what to do to experience our exhibit. This brings us to what the controls are for the top. The idea is that the user is going to be able to turn on the motor using the user interface, which will allow the top to spin upright. Then, the top will track how fast it is spinning and send this information back to the user. To make our controls reflect this, we will need to make a device that can activate the motor through the human interface. This should be relatively simple using the human interface. The only other component that will need to be accounted for is how to hold the top to make it spin. This can be done using designs on the outside of the top, as well as in the instructions. With this being an exhibit for others to experience, the user experience will be very important. With this in mind, we will need to make sure that the exhibit can experience high amounts of stress, as well as being safe and comfortable. We can achieve the durability part by making sure that the inner components of the top are compact, secure, and not prone to breaking when spinning or possibly encountering obstacles in its path. Safety will be important, especially with a spinning device like this that can suddenly become a projectile. To assist with this, we will make sure to have a secure area where the top can spin in and not cause any havoc in other exhibits. We will also make sure to have proper postage and warnings to keep away from the top while it is spinning. Finally, we will make sure that the design has sharp edges on the outer shell that could cause cuts or injuries. For comfort, we will try to make sure that everyone can access the area where the top is spinning and can see easily. For the instructions for our design, we will need to start by explaining how the top works. Then, we can go into how to activate the motor so that the top will spin. Then, the top will need to be positioned properly by the user once it is ready to spin. Finally, the user will deploy the spinning top and be able to look at what speed the top is spinning at. It will also be important to list in the instructions what the users should not do when operating the device. Some of this includes not placing your hand near the actuator, placing the top steadily and only in the bounds of the secure area, not touching the top once it is spinning and only touching it again once it is no longer spinning.
 
 ## Presentation
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1GmlLpeLXcM?si=0u8Vd-ubPptWi6bA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
