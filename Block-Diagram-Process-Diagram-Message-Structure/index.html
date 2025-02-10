@@ -655,6 +655,7 @@
 <h2 id="process-diagram">Process Diagram</h2>
 <pre class="mermaid"><code>sequenceDiagram
 autonumber
+actor In-Person User
 In-Person User--&gt;&gt;Bruce: Change Motor Direction
 Bruce-&gt;&gt;Baron: Change Motor Direction
 Baron-&gt;&gt;Shaurya: Change Motor Direction&lt;br&gt;(Passes through pcb)
@@ -667,6 +668,7 @@ end
 Shaurya-&gt;&gt;Baron: Rotational Velocity
 Baron-&gt;&gt;Bruce: Rotational Velocity
 Bruce--&gt;&gt;In-Person User: Display Rotational Velocity
+actor Web User
 Web User--&gt;&gt;Baron: Change Motor Direction
 Baron-&gt;&gt;Aadish: Change Motor Direction
 Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
