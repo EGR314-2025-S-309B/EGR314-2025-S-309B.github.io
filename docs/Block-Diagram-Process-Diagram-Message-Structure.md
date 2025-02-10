@@ -11,6 +11,7 @@ title: Block Diagram, Process Diagram, and Message Structure
 ``` mermaid
 sequenceDiagram
 autonumber
+actor In-Person User
 In-Person User-->>Bruce: Change Motor Direction
 Bruce->>Baron: Change Motor Direction
 Baron->>Shaurya: Change Motor Direction<br>(Passes through pcb)
@@ -23,6 +24,7 @@ end
 Shaurya->>Baron: Rotational Velocity
 Baron->>Bruce: Rotational Velocity
 Bruce-->>In-Person User: Display Rotational Velocity
+actor Web User
 Web User-->>Baron: Change Motor Direction
 Baron->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
