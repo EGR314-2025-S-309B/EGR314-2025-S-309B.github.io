@@ -24,7 +24,9 @@ Spring 2025
 
 ASU, EGR 314, Prof. Nichols
 
-## Ideation and Concept Generation
+## Links to Other Pages
 
-[Ideation and Concept Generation Page](Ideation-and-Concept-Generation.md)
+[Ideation and Concept Generation](Ideation-and-Concept-Generation.md)
+
+[Block-Diagram, Process Diagram, and Message Structure](Block-Diagram-Process-Diagram-Message-Structure.md)
 
