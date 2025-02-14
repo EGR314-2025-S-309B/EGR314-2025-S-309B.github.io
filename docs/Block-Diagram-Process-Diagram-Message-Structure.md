@@ -5,10 +5,12 @@ title: Block Diagram, Process Diagram, and Message Structure
 ## Block Diagram
 
 ### General Diagram
-![Image](https://github.com/user-attachments/assets/940949f6-fcf2-4f78-bd3a-8c2ba29b47a6)
+
+![Image](https://github.com/user-attachments/assets/50ad889c-ce0d-45a1-9792-29d9226b6554)
 
 ### Connector Diagram
-![Image](https://github.com/user-attachments/assets/afec4950-839c-433e-a2cd-8bad1bd7e58a)
+
+![Image](https://github.com/user-attachments/assets/9c36d203-0d05-4a19-b39d-eb0a5c103938)
 
 ## Process Diagram
 
@@ -18,7 +20,7 @@ autonumber
 actor In-Person User
 In-Person User-->>Bruce: Change Motor Direction
 Bruce->>Baron: Change Motor Direction
-Baron->>Shaurya: Change Motor Direction<br>(Passes through pcb)
+Baron->>Shaurya: Change Motor Direction
 Shaurya->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 loop Every Millisecond
