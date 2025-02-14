@@ -469,6 +469,19 @@
     Process Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ids" class="md-nav__link">
+    ID's
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -480,15 +493,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#single-byte-messages" class="md-nav__link">
-    Single Byte Messages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multi-byte-messages" class="md-nav__link">
-    Multi Byte Messages
+  <a href="#message-types" class="md-nav__link">
+    Message Types
   </a>
   
 </li>
@@ -677,6 +683,19 @@
     Process Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ids" class="md-nav__link">
+    ID's
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -688,15 +707,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#single-byte-messages" class="md-nav__link">
-    Single Byte Messages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multi-byte-messages" class="md-nav__link">
-    Multi Byte Messages
+  <a href="#message-types" class="md-nav__link">
+    Message Types
   </a>
   
 </li>
@@ -756,6 +768,33 @@ actor Web User
 Web User--&gt;&gt;Baron: Change Motor Direction
 Baron-&gt;&gt;Aadish: Change Motor Direction
 Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
+<h3 id="ids">ID's</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0xFF</td>
+<td>Bruce</td>
+</tr>
+<tr>
+<td>0xFE</td>
+<td>Baron</td>
+</tr>
+<tr>
+<td>0xFD</td>
+<td>Aadish</td>
+</tr>
+<tr>
+<td>0xFC</td>
+<td>Shaurya</td>
+</tr>
+</tbody>
+</table>
 <h2 id="message-structure">Message Structure</h2>
 <table>
 <thead>
@@ -779,119 +818,102 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 </tr>
 <tr>
 <td>4</td>
-<td>Screen Select</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Screen Back</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Screen Cycle</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Display on Screen</td>
-</tr>
-<tr>
-<td>8</td>
 <td>Motor Forward</td>
 </tr>
 <tr>
-<td>9</td>
+<td>5</td>
 <td>Motor Reverse</td>
 </tr>
 <tr>
-<td>10</td>
+<td>6</td>
 <td>Motor Speed Increase</td>
 </tr>
 <tr>
-<td>11</td>
+<td>7</td>
 <td>Motor Speed Decrease</td>
 </tr>
 <tr>
-<td>12</td>
+<td>8</td>
 <td>Rotational Velocity</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Gyroscope Data</td>
 </tr>
 </tbody>
 </table>
-<h3 id="single-byte-messages">Single Byte Messages</h3>
+<h3 id="message-types">Message Types</h3>
 <table>
 <thead>
 <tr>
 <th>Message Type</th>
-<th>Byte 1</th>
+<th>Byte 1-2<br>(uint16_t)</th>
+<th>Byte 3<br>(uint8_t)</th>
+<th>Byte 4<br>(uint8_t)</th>
+<th>Byte 5-6<br>(uint16_t)</th>
+<th>Byte 7-8<br>(uint16_t)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>Button 1 (uint8_t)</td>
+<td>0x01</td>
+<td>0xFF</td>
+<td>0xFF</td>
+<td>Button 1 Press</td>
+<td>0x20</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Button 2 (uint8_t)</td>
+<td>0x02</td>
+<td>0xFF</td>
+<td>0xFF</td>
+<td>Button 2 Press</td>
+<td>0x21</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Button 3 (uint8_t)</td>
+<td>0x03</td>
+<td>0xFF</td>
+<td>0xFF</td>
+<td>Button 3 Press</td>
+<td>0x22</td>
 </tr>
 <tr>
 <td>4</td>
-<td>0x01 (uint8_t)</td>
+<td>0x04</td>
+<td>0xFF</td>
+<td>0xFD</td>
+<td>0x50</td>
+<td>0x23</td>
 </tr>
 <tr>
 <td>5</td>
-<td>0x02 (uint8_t)</td>
+<td>0x05</td>
+<td>0xFF</td>
+<td>0xFD</td>
+<td>0x51</td>
+<td>0x24</td>
 </tr>
 <tr>
 <td>6</td>
-<td>0x03 (uint8_t)</td>
+<td>0x06</td>
+<td>0xFC</td>
+<td>0xFD</td>
+<td>0x52</td>
+<td>0x25</td>
 </tr>
 <tr>
 <td>7</td>
-<td>0x04 (uint8_t)</td>
+<td>0x07</td>
+<td>0xFC</td>
+<td>0xFD</td>
+<td>0x53</td>
+<td>0x26</td>
 </tr>
 <tr>
 <td>8</td>
-<td>0x05 (uint8_t)</td>
-</tr>
-<tr>
-<td>9</td>
-<td>0x06 (uint8_t)</td>
-</tr>
-<tr>
-<td>10</td>
-<td>0x7 (uint8_t)</td>
-</tr>
-<tr>
-<td>11</td>
-<td>0x8 (uint8_t)</td>
-</tr>
-<tr>
-<td>12</td>
-<td>0x9 (uint8_t)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="multi-byte-messages">Multi Byte Messages</h3>
-<table>
-<thead>
-<tr>
-<th>Message Type</th>
-<th>Byte 1</th>
-<th>Byte 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>13</td>
-<td>0x10 (uint8_t)</td>
-<td>0x11 (uint8_t)</td>
+<td>0x08</td>
+<td>0xFC</td>
+<td>0xFF</td>
+<td>Gyroscope Data</td>
+<td>0x27</td>
 </tr>
 </tbody>
 </table>
