@@ -27,7 +27,8 @@ loop Every Millisecond
   Shaurya->>Aadish: Update Motor Speed
   Aadish->>Aadish: Motor Speed Updated<br>(Trash)
 end
-Shaurya->>Baron: Rotational Velocity
+Shaurya->>Aadish: Rotational Velocity
+Aadish->>Baron: Rotational Velocity
 Baron->>Bruce: Rotational Velocity
 Bruce-->>In-Person User: Display Rotational Velocity
 actor Web User
