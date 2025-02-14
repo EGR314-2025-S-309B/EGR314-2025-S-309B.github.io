@@ -34,6 +34,15 @@ Baron->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 ```
 
+### ID's
+
+| ID | Definition |
+|---|---|
+| 0xFF | Bruce |
+| 0xFE | Baron |
+| 0xFD | Aadish |
+| 0xFC | Shaurya |
+
 ## Message Structure
 
 | Message Type<br>byte 1-2<br>(uint16_t) | Description |
@@ -41,36 +50,21 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 | 1 | Button 1 Pressed |
 | 2 | Button 2 Pressed |
 | 3 | Button 3 Pressed |
-| 4 | Screen Select |
-| 5 | Screen Back |
-| 6 | Screen Cycle |
-| 7 | Display on Screen |
-| 8 | Motor Forward |
-| 9 | Motor Reverse |
-| 10 | Motor Speed Increase |
-| 11 | Motor Speed Decrease |
-| 12 | Rotational Velocity |
-| 13 | Gyroscope Data |
+| 4 | Motor Forward |
+| 5 | Motor Reverse |
+| 6 | Motor Speed Increase |
+| 7 | Motor Speed Decrease |
+| 8 | Rotational Velocity |
 
-### Single Byte Messages
+### Message Types
 
-| Message Type | Byte 1 |
-|---|---|
-| 1 | Button 1 (uint8_t) |
-| 2 | Button 2 (uint8_t) |
-| 3 | Button 3 (uint8_t) |
-| 4 | 0x01 (uint8_t) |
-| 5 | 0x02 (uint8_t) |
-| 6 | 0x03 (uint8_t) |
-| 7 | 0x04 (uint8_t) |
-| 8 | 0x05 (uint8_t) |
-| 9 | 0x06 (uint8_t) |
-| 10 | 0x7 (uint8_t) |
-| 11 | 0x8 (uint8_t) |
-| 12 | 0x9 (uint8_t) |
-
-### Multi Byte Messages
-
-| Message Type | Byte 1 | Byte 2 |
-|---|---|---|
-| 13 | 0x10 (uint8_t) | 0x11 (uint8_t) |
+| Message Type | Byte 1-2<br>(uint16_t) | Byte 3<br>(uint8_t) | Byte 4<br>(uint8_t) | Byte 5-6<br>(uint16_t) | Byte 7-8<br>(uint16_t) |
+|---|---|---|---|---|---|
+| 1 | 0x01 | 0xFF | 0xFF | Button 1 Press | 0x20 |
+| 2 | 0x02 | 0xFF | 0xFF | Button 2 Press | 0x21 |
+| 3 | 0x03 | 0xFF | 0xFF | Button 3 Press | 0x22 |
+| 4 | 0x04 | 0xFF | 0xFD | 0x50 | 0x23 |
+| 5 | 0x05 | 0xFF | 0xFD | 0x51 | 0x24 |
+| 6 | 0x06 | 0xFC | 0xFD | 0x52 | 0x25 |
+| 7 | 0x07 | 0xFC | 0xFD | 0x53 | 0x26 |
+| 8 | 0x08 | 0xFC | 0xFF | Gyroscope Data | 0x27 |
