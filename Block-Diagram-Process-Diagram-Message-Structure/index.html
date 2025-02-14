@@ -442,6 +442,26 @@
     Block Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-diagram" class="md-nav__link">
+    General Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-diagram" class="md-nav__link">
+    Connector Diagram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -455,6 +475,26 @@
   <a href="#message-structure" class="md-nav__link">
     Message Structure
   </a>
+  
+    <nav class="md-nav" aria-label="Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-byte-messages" class="md-nav__link">
+    Single Byte Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-byte-messages" class="md-nav__link">
+    Multi Byte Messages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -610,6 +650,26 @@
     Block Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-diagram" class="md-nav__link">
+    General Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connector-diagram" class="md-nav__link">
+    Connector Diagram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -623,6 +683,26 @@
   <a href="#message-structure" class="md-nav__link">
     Message Structure
   </a>
+  
+    <nav class="md-nav" aria-label="Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-byte-messages" class="md-nav__link">
+    Single Byte Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-byte-messages" class="md-nav__link">
+    Multi Byte Messages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -652,6 +732,10 @@
   <h1>Block Diagram, Process Diagram, and Message Structure</h1>
 
 <h2 id="block-diagram">Block Diagram</h2>
+<h3 id="general-diagram">General Diagram</h3>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/940949f6-fcf2-4f78-bd3a-8c2ba29b47a6" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/940949f6-fcf2-4f78-bd3a-8c2ba29b47a6" /></a></p>
+<h3 id="connector-diagram">Connector Diagram</h3>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/afec4950-839c-433e-a2cd-8bad1bd7e58a" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/afec4950-839c-433e-a2cd-8bad1bd7e58a" /></a></p>
 <h2 id="process-diagram">Process Diagram</h2>
 <pre class="mermaid"><code>sequenceDiagram
 autonumber
@@ -673,6 +757,144 @@ Web User--&gt;&gt;Baron: Change Motor Direction
 Baron-&gt;&gt;Aadish: Change Motor Direction
 Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <h2 id="message-structure">Message Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Message Type<br>byte 1-2<br>(uint16_t)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Button 1 Pressed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Button 2 Pressed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Button 3 Pressed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Screen Select</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Screen Back</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Screen Cycle</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Display on Screen</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Motor Forward</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Motor Reverse</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Motor Speed Increase</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Motor Speed Decrease</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Rotational Velocity</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Gyroscope Data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="single-byte-messages">Single Byte Messages</h3>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Button 1 (uint8_t)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Button 2 (uint8_t)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Button 3 (uint8_t)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0x01 (uint8_t)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0x02 (uint8_t)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0x03 (uint8_t)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0x04 (uint8_t)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0x05 (uint8_t)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0x06 (uint8_t)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0x7 (uint8_t)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>0x8 (uint8_t)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>0x9 (uint8_t)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multi-byte-messages">Multi Byte Messages</h3>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13</td>
+<td>0x10 (uint8_t)</td>
+<td>0x11 (uint8_t)</td>
+</tr>
+</tbody>
+</table>
 
 
 
