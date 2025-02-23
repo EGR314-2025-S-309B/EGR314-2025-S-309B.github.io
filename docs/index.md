@@ -11,7 +11,7 @@ This website provides documentation for an embedded systems project. The project
 
 - [Baron Website](https://scoon04.github.io/)
 - [Bruce Website](https://ibmyers2.github.io/EGR314_Team309_IBM/)
-- Aadish Website
+- [Aadish Website](https://aadishlele.github.io/)
 - [Shaurya Website](https://shauryamanglik.github.io/shauryamanglik/)
 
 ## Title
