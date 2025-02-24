@@ -23,4 +23,7 @@ Spinning Top
 - [PIC18 Comparison Document](https://ww1.microchip.com/downloads/en/DeviceDoc/30327b.pdf)
 - [PIC18-Q10 Product Family](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic18f-q10)
 
+Battery
+- 18650 battery(Use 2)
+
 ## Human Machine Interface
