@@ -1,5 +1,5 @@
 ---
-title: Block Diagram, Process Diagram, and Message Structure
+title: Block/Process Diagrams & Message Structure
 ---
 
 ## Block Diagram
@@ -37,6 +37,8 @@ Baron->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 ```
 
+## Message Structure
+
 ### ID's
 
 | ID | Definition |
@@ -46,7 +48,7 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 | 0xFD | Aadish |
 | 0xFC | Shaurya |
 
-## Message Structure
+### Message Types
 
 | Message Type<br>byte 1-2<br>(uint16_t) | Description |
 |---|---|
@@ -59,7 +61,7 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 | 7 | Motor Speed Decrease |
 | 8 | Rotational Velocity |
 
-### Message Types
+### Messages Structure
 
 | Message Type | Byte 1-2<br>(uint16_t) | Byte 3<br>(uint8_t) | Byte 4<br>(uint8_t) | Byte 5-6<br>(uint16_t) | Byte 7-8<br>(uint16_t) |
 |---|---|---|---|---|---|
