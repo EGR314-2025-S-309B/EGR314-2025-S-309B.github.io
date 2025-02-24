@@ -1,6 +1,8 @@
 ---
-title: Potential Components for System
+title: Resources
 ---
+
+# Potential Components
 
 ## Actuators
 
