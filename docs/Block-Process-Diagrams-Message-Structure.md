@@ -33,7 +33,8 @@ Baron->>Bruce: Rotational Velocity
 Bruce-->>In-Person User: Display Rotational Velocity
 actor Web User
 Web User-->>Baron: Change Motor Direction
-Baron->>Aadish: Change Motor Direction
+Baron->>Shaurya: Change Motor Direction
+Shaurya->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 ```
 
