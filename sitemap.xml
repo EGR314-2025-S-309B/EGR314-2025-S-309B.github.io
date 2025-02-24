@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/Block-Diagram-Process-Diagram-Message-Structure/</loc>
-         <lastmod>2025-02-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://embedded-systems-design.github.io/template_report/Ideation-and-Concept-Generation/</loc>
          <lastmod>2025-02-24</lastmod>
          <changefreq>daily</changefreq>
@@ -27,6 +22,11 @@
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/Components/Potential%20Components/</loc>
+         <lastmod>2025-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://embedded-systems-design.github.io/template_report/Diagrams/Block-Diagram-Process-Diagram-Message-Structure/</loc>
          <lastmod>2025-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
