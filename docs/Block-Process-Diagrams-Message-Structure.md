@@ -6,11 +6,11 @@ title: Block/Process Diagrams & Message Structure
 
 ### General Diagram
 
-![Image](https://github.com/user-attachments/assets/50ad889c-ce0d-45a1-9792-29d9226b6554)
+![Image](https://github.com/user-attachments/assets/0c77f48d-81e9-4630-be1a-b01ad48d87c3)
 
 ### Connector Diagram
 
-![Image](https://github.com/user-attachments/assets/9c36d203-0d05-4a19-b39d-eb0a5c103938)
+![Image](https://github.com/user-attachments/assets/5181d0f3-c607-4b25-8f0b-ecfba9d1c3aa)
 
 ## Process Diagram
 
