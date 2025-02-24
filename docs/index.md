@@ -37,5 +37,5 @@ ASU, EGR 314, Prof. Nichols
 
 [Ideation and Concept Generation](Ideation-and-Concept-Generation.md)
 
-[Block-Diagram, Process Diagram, and Message Structure](Block-Diagram-Process-Diagram-Message-Structure.md)
+[Block-Diagram, Process Diagram, and Message Structure](Block-+-Process-Diagrams-&-Message-Structure.md)
 
