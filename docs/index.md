@@ -9,10 +9,10 @@ tags:
 
 This website provides documentation for an embedded systems project. The project is a spinning top designed to provide a fun and interesting way to get high school students interested in STEM. This website is meant to document the ideas and decision making process of our team throughout the projects timeline. We also have individual websites to document our individual systems and provide more information for each section of our project.
 
-- [Baron Website](https://scoon04.github.io/)
-- [Bruce Website](https://ibmyers2.github.io/EGR314_Team309_IBM/)
-- [Aadish Website](https://aadishlele.github.io/)
-- [Shaurya Website](https://shauryamanglik.github.io/shauryamanglik/)
+- [Baron Website - MQTT](https://scoon04.github.io/)
+- [Bruce Website - HMI](https://ibmyers2.github.io/EGR314_Team309_IBM/)
+- [Aadish Website - Actuator](https://aadishlele.github.io/)
+- [Shaurya Website - Sensor](https://shauryamanglik.github.io/shauryamanglik/)
 
 ## Title
 
