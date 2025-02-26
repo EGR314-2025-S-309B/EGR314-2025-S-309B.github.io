@@ -51,16 +51,16 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 
 ### Message Types
 
-| Message Type<br>byte 1-2<br>(uint16_t) | Description |
+| Message Length | Description |
 |---|---|
-| 1 | Button 1 Pressed |
-| 2 | Button 2 Pressed |
-| 3 | Button 3 Pressed |
-| 4 | Motor Forward |
-| 5 | Motor Reverse |
-| 6 | Motor Speed Increase |
-| 7 | Motor Speed Decrease |
-| 8 | Rotational Velocity |
+| 1 (uint8_t) | Button 1 Pressed |
+| 1 (uint8_t) | Button 2 Pressed |
+| 1 (uint8_t) | Button 3 Pressed |
+| 1 (uint8_t) | Motor Forward |
+| 1 (uint8_t) | Motor Reverse |
+| 1 (uint8_t) | Motor Speed Increase |
+| 1 (uint8_t) | Motor Speed Decrease |
+| 2 (uint16_t) | Rotational Velocity |
 
 ### Messages Structure
 
