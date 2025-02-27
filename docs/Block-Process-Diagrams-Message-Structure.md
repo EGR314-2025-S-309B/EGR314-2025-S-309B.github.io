@@ -30,6 +30,8 @@ end
 Shaurya->>Aadish: Rotational Velocity
 Aadish->>Baron: Rotational Velocity
 Baron->>Bruce: Rotational Velocity
+actor Web User
+Baron-->>Web User: Display Rotational Velocity
 Bruce-->>In-Person User: Display Rotational Velocity
 actor Web User
 Web User-->>Baron: Change Motor Direction
