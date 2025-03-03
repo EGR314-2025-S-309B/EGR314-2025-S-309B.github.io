@@ -51,18 +51,45 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 | 0xFD | Aadish |
 | 0xFC | Shaurya |
 
+### Message Types 
+
+| Message Type | Description |
+|---|---|
+| 1 | Change Motor Direction |
+| 2 | Update Motor Speed |
+| 3 | Rotational Velocity |
+
+### Messages Structure
+
+- Any messages sent to Bruce will be sent to Baron through UART and then sent to Bruce through MQTT server.
+- Any messages sent from Bruce will be sent to Baron through MQTT server and then sent to there respective user through UART.
+
+| Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
+|---|---|---|---|---|---|
+| 1 | 0x01 | Bruce | Aadish | Button 1 Press | 0x20 |
+| 2 | 0x02 | Shaurya | Aadish | Button 2 Press | 0x21 |
+| 3 | 0x03 | Shaurya | Bruce | Button 3 Press | 0x22 |
+
+
+
+
+
+
+
+## OLD INFO
+
 ### Message Types
 
-| Message Length | Description |
+| Message Type | Description |
 |---|---|
-| 1 (uint8_t) | Button 1 Pressed |
-| 1 (uint8_t) | Button 2 Pressed |
-| 1 (uint8_t) | Button 3 Pressed |
-| 1 (uint8_t) | Motor Forward |
-| 1 (uint8_t) | Motor Reverse |
-| 1 (uint8_t) | Motor Speed Increase |
-| 1 (uint8_t) | Motor Speed Decrease |
-| 2 (uint16_t) | Rotational Velocity |
+| 1 | Button 1 Pressed |
+| 2 | Button 2 Pressed |
+| 3 | Button 3 Pressed |
+| 4 | Motor Forward |
+| 5 | Motor Reverse |
+| 6 | Motor Speed Increase |
+| 7 | Motor Speed Decrease |
+| 8 | Gyroscope Data |
 
 ### Messages Structure
 
