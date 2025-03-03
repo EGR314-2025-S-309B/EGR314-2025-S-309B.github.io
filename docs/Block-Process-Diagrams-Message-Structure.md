@@ -66,9 +66,9 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 
 | Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
 |---|---|---|---|---|---|
-| 1 | 0x01 | Bruce | Aadish | Button 1 Press | 0x20 |
-| 2 | 0x02 | Shaurya | Aadish | Button 2 Press | 0x21 |
-| 3 | 0x03 | Shaurya | Bruce | Button 3 Press | 0x22 |
+| 1 | 0x01 | Bruce | Aadish | 0x50 | 0x20 |
+| 2 | 0x02 | Shaurya | Aadish | 0x51 | 0x21 |
+| 3 | 0x03 | Shaurya | Bruce | 0x52 | 0x22 |
 
 
 
