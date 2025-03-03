@@ -485,6 +485,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#old-info" class="md-nav__link">
+    OLD INFO
+  </a>
+  
+    <nav class="md-nav" aria-label="OLD INFO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-types_1" class="md-nav__link">
+    Message Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages-structure_1" class="md-nav__link">
+    Messages Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -661,6 +688,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#old-info" class="md-nav__link">
+    OLD INFO
+  </a>
+  
+    <nav class="md-nav" aria-label="OLD INFO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-types_1" class="md-nav__link">
+    Message Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#messages-structure_1" class="md-nav__link">
+    Messages Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -747,46 +801,113 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <table>
 <thead>
 <tr>
-<th>Message Length</th>
+<th>Message Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1 (uint8_t)</td>
-<td>Button 1 Pressed</td>
+<td>1</td>
+<td>Change Motor Direction</td>
 </tr>
 <tr>
-<td>1 (uint8_t)</td>
-<td>Button 2 Pressed</td>
+<td>2</td>
+<td>Update Motor Speed</td>
 </tr>
 <tr>
-<td>1 (uint8_t)</td>
-<td>Button 3 Pressed</td>
-</tr>
-<tr>
-<td>1 (uint8_t)</td>
-<td>Motor Forward</td>
-</tr>
-<tr>
-<td>1 (uint8_t)</td>
-<td>Motor Reverse</td>
-</tr>
-<tr>
-<td>1 (uint8_t)</td>
-<td>Motor Speed Increase</td>
-</tr>
-<tr>
-<td>1 (uint8_t)</td>
-<td>Motor Speed Decrease</td>
-</tr>
-<tr>
-<td>2 (uint16_t)</td>
+<td>3</td>
 <td>Rotational Velocity</td>
 </tr>
 </tbody>
 </table>
 <h3 id="messages-structure">Messages Structure</h3>
+<ul>
+<li>Any messages sent to Bruce will be sent to Baron through UART and then sent to Bruce through MQTT server.</li>
+<li>Any messages sent from Bruce will be sent to Baron through MQTT server and then sent to there respective user through UART.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Byte 1-2 (Prefix)<br>(uint16_t)</th>
+<th>Byte 3 (Sender ID)<br>(uint8_t)</th>
+<th>Byte 4 (Reciever ID)<br>(uint8_t)</th>
+<th>Byte 5-6 (Data)<br>(uint16_t)</th>
+<th>Byte 7-8 (Suffix)<br>(uint16_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0x01</td>
+<td>Bruce</td>
+<td>Aadish</td>
+<td>Button 1 Press</td>
+<td>0x20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0x02</td>
+<td>Shaurya</td>
+<td>Aadish</td>
+<td>Button 2 Press</td>
+<td>0x21</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0x03</td>
+<td>Shaurya</td>
+<td>Bruce</td>
+<td>Button 3 Press</td>
+<td>0x22</td>
+</tr>
+</tbody>
+</table>
+<h2 id="old-info">OLD INFO</h2>
+<h3 id="message-types_1">Message Types</h3>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Button 1 Pressed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Button 2 Pressed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Button 3 Pressed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Motor Forward</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Motor Reverse</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Motor Speed Increase</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Motor Speed Decrease</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Gyroscope Data</td>
+</tr>
+</tbody>
+</table>
+<h3 id="messages-structure_1">Messages Structure</h3>
 <table>
 <thead>
 <tr>
