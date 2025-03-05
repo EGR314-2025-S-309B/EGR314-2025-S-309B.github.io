@@ -23,7 +23,7 @@ Bruce->>Baron: Change Motor Direction
 Baron->>Shaurya: Change Motor Direction
 Shaurya->>Aadish: Change Motor Direction
 Aadish->>Aadish: Motor Direction Changed<br>(Trash)
-loop Every Millisecond
+loop Every Second
   Shaurya->>Aadish: Update Motor Speed
   Aadish->>Aadish: Motor Speed Updated<br>(Trash)
 end
