@@ -42,16 +42,20 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 
 ## Message Structure
 
-### ID's
+### IDs
 
-| ID | Definition |
+Each user has been assigned a user ID to make communication easier between users. Any messages sent will contain the sender and reciever ID to identify where its coming from and where its going to. Below is a list of IDs for each user in our project
+
+| ID | User |
 |---|---|
 | 0xFF | Bruce |
 | 0xFE | Baron |
 | 0xFD | Aadish |
 | 0xFC | Shaurya |
 
-### Message Types 
+### Message Types
+
+The message types are defined by the Process Diagram. Our Process Diagram only has 3 types of messages that are send between users, so below are those messages and their functions.
 
 | Message Type | Description |
 |---|---|
@@ -59,47 +63,27 @@ Aadish->>Aadish: Motor Direction Changed<br>(Trash)
 | 2 | Update Motor Speed |
 | 3 | Rotational Velocity |
 
+### Message Variations
+
+While message types are meant to define each message in the Process Diagram, there can be multiple variations within a message type. A motor direction message can mean to move the motor forward or reverse, so below is a breakdown of each message variation in each type and its ID.
+
+| Message Type | Variations | ID |
+|---|---|---|
+| 1 | Motor Direction Forward | 0x40 |
+| 1 | Motor Direction Reverse | 0x41 |
+| 2 | Motor Speed Increase | 0x42 |
+| 2 | Motor Speed Decrease | 0x43 |
+| 3 | Rotational Velocity | 0x44 |
+
 ### Messages Structure
+
+This is a breakdown of how serial messages will be sent. It shows each byte in a message and what its use is.
 
 - Any messages sent to Bruce will be sent to Baron through UART and then sent to Bruce through MQTT server.
 - Any messages sent from Bruce will be sent to Baron through MQTT server and then sent to there respective user through UART.
 
 | Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
 |---|---|---|---|---|---|
-| 1 | 0x01 | Bruce | Aadish | 0x50 | 0x20 |
-| 2 | 0x02 | Shaurya | Aadish | 0x51 | 0x21 |
-| 3 | 0x03 | Shaurya | Bruce | 0x52 | 0x22 |
-
-
-
-
-
-
-
-## OLD INFO
-
-### Message Types
-
-| Message Type | Description |
-|---|---|
-| 1 | Button 1 Pressed |
-| 2 | Button 2 Pressed |
-| 3 | Button 3 Pressed |
-| 4 | Motor Forward |
-| 5 | Motor Reverse |
-| 6 | Motor Speed Increase |
-| 7 | Motor Speed Decrease |
-| 8 | Gyroscope Data |
-
-### Messages Structure
-
-| Message Type | Byte 1-2<br>(uint16_t) | Byte 3<br>(uint8_t) | Byte 4<br>(uint8_t) | Byte 5-6<br>(uint16_t) | Byte 7-8<br>(uint16_t) |
-|---|---|---|---|---|---|
-| 1 | 0x01 | 0xFF | 0xFF | Button 1 Press | 0x20 |
-| 2 | 0x02 | 0xFF | 0xFF | Button 2 Press | 0x21 |
-| 3 | 0x03 | 0xFF | 0xFF | Button 3 Press | 0x22 |
-| 4 | 0x04 | 0xFF | 0xFD | 0x50 | 0x23 |
-| 5 | 0x05 | 0xFF | 0xFD | 0x51 | 0x24 |
-| 6 | 0x06 | 0xFC | 0xFD | 0x52 | 0x25 |
-| 7 | 0x07 | 0xFC | 0xFD | 0x53 | 0x26 |
-| 8 | 0x08 | 0xFC | 0xFF | Gyroscope Data | 0x27 |
+| 1 | 0x01 | Bruce | Aadish | Motor Direction X | 0x20 |
+| 2 | 0x02 | Shaurya | Aadish | Motor Speed X | 0x21 |
+| 3 | 0x03 | Shaurya | Bruce | Rotational Velocity | 0x22 |
