@@ -82,7 +82,7 @@ This is a breakdown of how serial messages will be sent. It shows each byte in a
 - Any messages sent to Bruce will be sent to Baron through UART and then sent to Bruce through MQTT server.
 - Any messages sent from Bruce will be sent to Baron through MQTT server and then sent to there respective user through UART.
 
-| Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
+| Message Type | Byte 1-2 (Prefix)<br>(uint8_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint8_t) |
 |---|---|---|---|---|---|
 | 1 | 0x01 | Bruce | Aadish | Motor Direction X | 0x20 |
 | 2 | 0x02 | Shaurya | Aadish | Motor Speed X | 0x21 |
