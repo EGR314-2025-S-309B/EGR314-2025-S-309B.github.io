@@ -69,11 +69,11 @@ While message types are meant to define each message in the Process Diagram, the
 
 | Message Type | Variations | ID |
 |---|---|---|
-| 1 | Motor Direction Forward | 0x40 |
-| 1 | Motor Direction Reverse | 0x41 |
-| 2 | Motor Speed Increase | 0x42 |
-| 2 | Motor Speed Decrease | 0x43 |
-| 3 | Rotational Velocity | 0x44 |
+| 1 | Motor Direction Forward | 0x0040 |
+| 1 | Motor Direction Reverse | 0x0041 |
+| 2 | Motor Speed Increase | 0x0042 |
+| 2 | Motor Speed Decrease | 0x0043 |
+| 3 | Rotational Velocity | 0x0044 |
 
 ### Messages Structure
 
