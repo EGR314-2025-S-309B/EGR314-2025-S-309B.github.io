@@ -73,7 +73,7 @@ While message types are meant to define each message in the Process Diagram, the
 | 1 | Motor Direction Reverse | 0x0041 |
 | 2 | Motor Speed Increase | 0x0042 |
 | 2 | Motor Speed Decrease | 0x0043 |
-| 3 | Rotational Velocity | 0x0044 |
+| 3 | Rotational Velocity | Varies |
 
 ### Messages Structure
 
