@@ -48,10 +48,10 @@ Each user has been assigned a user ID to make communication easier between users
 
 | ID | User |
 |---|---|
-| 0xFF | Bruce |
-| 0xFE | Baron |
-| 0xFD | Aadish |
-| 0xFC | Shaurya |
+| M | Bruce |
+| B | Baron |
+| A | Aadish |
+| S | Shaurya |
 
 ### Message Types
 
