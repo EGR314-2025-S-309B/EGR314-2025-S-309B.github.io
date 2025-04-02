@@ -84,6 +84,6 @@ This is a breakdown of how serial messages will be sent. It shows each byte in a
 
 | Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
 |---|---|---|---|---|---|
-| 1 | 0x0001 | Bruce | Aadish | Motor Direction X | 0x0020 |
-| 2 | 0x0002 | Shaurya | Aadish | Motor Speed X | 0x0021 |
-| 3 | 0x0003 | Shaurya | Bruce | Rotational Velocity | 0x0022 |
+| 1 | AZ | Bruce | Aadish | Motor Direction X | YB |
+| 2 | AZ | Shaurya | Aadish | Motor Speed X | YB |
+| 3 | AZ | Shaurya | Bruce | Rotational Velocity | YB |
