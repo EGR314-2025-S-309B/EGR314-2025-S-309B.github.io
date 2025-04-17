@@ -7,19 +7,14 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    - scheme: slate  # Default to dark mode
+    - scheme: slate  # Only dark mode
       primary: black
       accent: lime
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: Switch to light mode (disabled)
       default: true  # Force dark mode by default
-    - scheme: default  # Optional light mode toggle
-      primary: blue grey
-      accent: cyan
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
+    # No light mode configuration here
   font:
     text: Roboto
   logo: static/logo.svg
