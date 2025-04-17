@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block site_meta %}
-
-<meta name="robots" content="nofollow" />
-
-{{ super() }}        
-
-        
+  <meta name="robots" content="nofollow" />
+  {{ super() }}
 {% endblock %}
 
 {% block extrahead %}
+  {# Optional: Add custom styles/scripts here #}
+{% endblock %}
 
+{% block content %}
+  {{ super() }}
 {% endblock %}
