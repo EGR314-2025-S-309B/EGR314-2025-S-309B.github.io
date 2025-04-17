@@ -9,12 +9,7 @@ theme:
   palette:
     - scheme: slate  # Only dark mode
       primary: black
-      accent: lime
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode (disabled)
-      default: true  # Force dark mode by default
-    # No light mode configuration here
+      accent: cyan
   font:
     text: Roboto
   logo: static/logo.svg
