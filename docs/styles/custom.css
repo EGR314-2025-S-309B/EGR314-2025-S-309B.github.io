@@ -1,0 +1,10 @@
+/* Custom blockquote styling for dark mode with a slight yellow-green tint */
+.md-typeset blockquote {
+  background-color: rgba(0, 128, 0, 0.1); /* Light green background with a hint of yellow */
+  border-left: 3px solid #32CD32; /* Lime green accent line */
+  padding: 0.2em 1em; /* Significantly reduced vertical padding */
+  margin: 0.5em 0; /* Reduced margin for a tighter blockquote */
+  color: #D3D3D3; /* Light grey text */
+  font-style: normal;
+  border-radius: 6px;
+}
