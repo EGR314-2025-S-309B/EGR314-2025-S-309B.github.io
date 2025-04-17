@@ -14,20 +14,9 @@ This website provides documentation for an embedded systems project. The project
 
 ## Title
 
-STEM Demonstration
-
-Team 309B
-
-Members
-
-- Baron Guido
-- Bruce Myers
-
-Preperation Date: January 16
-
-Spring 2025
-
-ASU, EGR 314, Prof. Nichols
+|**Team #** | **Members** | **Project** | **Start Date** | **Semester** | **Class #** | **Professor** |
+| --- | --- | --- | --- | --- | --- | --- |
+| 309B | Baron Guido<br>Bruce Myers | Stem Demonstration | January 16 | Spring 2025 | EGR 314 | Kevin Nichols |
 
 ## Links to Other Pages
 
