@@ -9,7 +9,7 @@ theme:
   palette:
     - scheme: slate  # Only dark mode
       primary: black
-      accent: cyan
+      accent: lime
   font:
     text: Roboto
   logo: static/logo.svg
