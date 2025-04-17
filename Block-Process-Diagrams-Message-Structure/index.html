@@ -415,26 +415,6 @@
     Block Diagram
   </a>
   
-    <nav class="md-nav" aria-label="Block Diagram">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#general-diagram" class="md-nav__link">
-    General Diagram
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connector-diagram" class="md-nav__link">
-    Connector Diagram
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -579,26 +559,6 @@
     Block Diagram
   </a>
   
-    <nav class="md-nav" aria-label="Block Diagram">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#general-diagram" class="md-nav__link">
-    General Diagram
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#connector-diagram" class="md-nav__link">
-    Connector Diagram
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -676,34 +636,23 @@
   <h1>Block/Process Diagrams & Message Structure</h1>
 
 <h2 id="block-diagram">Block Diagram</h2>
-<h3 id="general-diagram">General Diagram</h3>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/0c77f48d-81e9-4630-be1a-b01ad48d87c3" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/0c77f48d-81e9-4630-be1a-b01ad48d87c3" /></a></p>
-<h3 id="connector-diagram">Connector Diagram</h3>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/5181d0f3-c607-4b25-8f0b-ecfba9d1c3aa" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/5181d0f3-c607-4b25-8f0b-ecfba9d1c3aa" /></a></p>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/651e5817-eb46-400d-a245-e854372629f9" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/user-attachments/assets/651e5817-eb46-400d-a245-e854372629f9" /></a></p>
 <h2 id="process-diagram">Process Diagram</h2>
 <pre class="mermaid"><code>sequenceDiagram
 autonumber
 actor In-Person User
-In-Person User--&gt;&gt;Bruce: Change Motor Direction
-Bruce-&gt;&gt;Baron: Change Motor Direction
-Baron-&gt;&gt;Shaurya: Change Motor Direction
-Shaurya-&gt;&gt;Aadish: Change Motor Direction
-Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)
-loop Every Second
-  Shaurya-&gt;&gt;Aadish: Update Motor Speed
-  Aadish-&gt;&gt;Aadish: Motor Speed Updated&lt;br&gt;(Trash)
-end
-Shaurya-&gt;&gt;Aadish: Rotational Velocity
-Aadish-&gt;&gt;Baron: Rotational Velocity
-Baron-&gt;&gt;Bruce: Rotational Velocity
-actor Web User
-Baron--&gt;&gt;Web User: Display Rotational Velocity
-Bruce--&gt;&gt;In-Person User: Display Rotational Velocity
-actor Web User
-Web User--&gt;&gt;Baron: Change Motor Direction
-Baron-&gt;&gt;Shaurya: Change Motor Direction
-Shaurya-&gt;&gt;Aadish: Change Motor Direction
-Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
+participant Bruce
+participant Baron
+actor MQTT
+In-Person User-&gt;&gt;Bruce: Toggle Motor
+Bruce--&gt;&gt;MQTT: Toggle Motor
+MQTT--&gt;&gt;Baron: Toggle Motor
+Baron-&gt;&gt;Baron: Motor Toggled&lt;br&gt;(Trash)
+MQTT--&gt;&gt;Baron: Toggle Motor
+Baron-&gt;&gt;Baron: Motor Toggled&lt;br&gt;(Trash)</code></pre>
+<blockquote>
+<p>Edit: UART communication was supposed to happen between Baron and the old team 309 members. However, with team 309B, only the mqtt server will be used for communication. Due to the nature of the project, it makes more sense to communicate over wifi rather than uart.</p>
+</blockquote>
 <h2 id="message-structure">Message Structure</h2>
 <h3 id="ids">IDs</h3>
 <p>Each user has been assigned a user ID to make communication easier between users. Any messages sent will contain the sender and reciever ID to identify where its coming from and where its going to. Below is a list of IDs for each user in our project</p>
@@ -723,14 +672,6 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <td>B</td>
 <td>Baron</td>
 </tr>
-<tr>
-<td>A</td>
-<td>Aadish</td>
-</tr>
-<tr>
-<td>S</td>
-<td>Shaurya</td>
-</tr>
 </tbody>
 </table>
 <h3 id="message-types">Message Types</h3>
@@ -745,15 +686,7 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <tbody>
 <tr>
 <td>1</td>
-<td>Change Motor Direction</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Update Motor Speed</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Rotational Velocity</td>
+<td>Toggle Motor</td>
 </tr>
 </tbody>
 </table>
@@ -770,28 +703,13 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <tbody>
 <tr>
 <td>1</td>
-<td>Motor Direction Forward</td>
+<td>Motor Start</td>
 <td>0x0040</td>
 </tr>
 <tr>
 <td>1</td>
-<td>Motor Direction Reverse</td>
+<td>Motor Stop</td>
 <td>0x0041</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Motor Speed Increase</td>
-<td>0x0042</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Motor Speed Decrease</td>
-<td>0x0043</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Rotational Velocity</td>
-<td>Varies</td>
 </tr>
 </tbody>
 </table>
@@ -817,28 +735,23 @@ Aadish-&gt;&gt;Aadish: Motor Direction Changed&lt;br&gt;(Trash)</code></pre>
 <td>1</td>
 <td>AZ</td>
 <td>Bruce</td>
-<td>Aadish</td>
-<td>Motor Direction X</td>
+<td>Baron</td>
+<td>Motor Start</td>
 <td>YB</td>
 </tr>
 <tr>
-<td>2</td>
+<td>1</td>
 <td>AZ</td>
-<td>Shaurya</td>
-<td>Aadish</td>
-<td>Motor Speed X</td>
-<td>YB</td>
-</tr>
-<tr>
-<td>3</td>
-<td>AZ</td>
-<td>Shaurya</td>
 <td>Bruce</td>
-<td>Rotational Velocity</td>
+<td>Baron</td>
+<td>Motor Stop</td>
 <td>YB</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Edit: The bulk of out messages got removed when transfering to team 309B. We no longer have an offical sensor or actuator system so this is the best we could do in the time we had</p>
+</blockquote>
 
 
 
