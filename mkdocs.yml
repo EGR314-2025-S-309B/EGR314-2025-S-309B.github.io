@@ -2,27 +2,28 @@ site_name: EGR 314 Team 309B
 site_url: https://embedded-systems-design.github.io/template_report
 repo_url: https://github.com/embedded-systems-design/template_report
 edit_uri: edit/main/docs/
+
 theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    - scheme: default
-      primary: blue grey
-      accent: cyan
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
+    - scheme: slate  # Default to dark mode
       primary: black
       accent: lime
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+      default: true  # Force dark mode by default
+    - scheme: default  # Optional light mode toggle
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   font:
     text: Roboto
   logo: static/logo.svg
   favicon: static/logo.png
-
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -33,13 +34,10 @@ theme:
     - navigation.prune
     - content.action.edit
     - navigation.footer
-#    - navigation.sections
-#    - navigation.expand
-#    - navigation.instant # doesn't work that well
 
 markdown_extensions:
-  - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/
-  - md_in_html # see https://squidfunk.github.io/mkdocs-material/reference/images/
+  - attr_list
+  - md_in_html
   - footnotes
   - pymdownx.arithmatex:
       generic: true
@@ -54,21 +52,21 @@ draft_docs: |
   **/*_unpublished.md
   **/*_draft.md
   **/*_draft**
-  
+
 plugins:
   - search
-  - glightbox # allow resize images, see https://squidfunk.github.io/mkdocs-material/reference/images/
+  - glightbox
 
 extra_css:
   - stylesheets/extra.css  
 
 extra_javascript:
- - javascripts/mathjax.js
- - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
 not_in_nav: |
   static
-  
+
 copyright: "Copyright &copy; 2024 team-name-here"
 
 extra:
@@ -76,4 +74,4 @@ extra:
   social:
     - icon: fontawesome/regular/file-code
       link: /2023_fall
-      name: 2023 Site    
+      name: 2023 Site
