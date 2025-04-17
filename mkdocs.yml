@@ -6,8 +6,18 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    primary: black
-    accent: purple
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   font:
     text: Roboto
   logo: static/logo.svg
