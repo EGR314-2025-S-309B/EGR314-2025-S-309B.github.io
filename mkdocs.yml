@@ -48,7 +48,8 @@ plugins:
   - glightbox
 
 extra_css:
-  - stylesheets/extra.css  
+  - stylesheets/extra.css
+  - styles/custom.css
 
 extra_javascript:
   - javascripts/mathjax.js
