@@ -11,21 +11,17 @@ This website provides documentation for an embedded systems project. The project
 
 - [Baron Website - MQTT](https://scoon04.github.io/)
 - [Bruce Website - HMI](https://ibmyers2.github.io/EGR314_Team309_IBM/)
-- [Aadish Website - Actuator](https://aadishlele.github.io/)
-- [Shaurya Website - Sensor](https://shauryamanglik.github.io/shauryamanglik/)
 
 ## Title
 
 STEM Demonstration
 
-Team 309
+Team 309B
 
 Members
 
 - Baron Guido
 - Bruce Myers
-- Aadish Lele
-- Shaurya Manglik
 
 Preperation Date: January 16
 
