@@ -4,13 +4,7 @@ title: Block/Process Diagrams & Message Structure
 
 ## Block Diagram
 
-### General Diagram
-
-![Image](https://github.com/user-attachments/assets/0c77f48d-81e9-4630-be1a-b01ad48d87c3)
-
-### Connector Diagram
-
-![Image](https://github.com/user-attachments/assets/5181d0f3-c607-4b25-8f0b-ecfba9d1c3aa)
+![image](https://github.com/user-attachments/assets/651e5817-eb46-400d-a245-e854372629f9)
 
 ## Process Diagram
 
@@ -18,27 +12,17 @@ title: Block/Process Diagrams & Message Structure
 sequenceDiagram
 autonumber
 actor In-Person User
-In-Person User-->>Bruce: Change Motor Direction
-Bruce->>Baron: Change Motor Direction
-Baron->>Shaurya: Change Motor Direction
-Shaurya->>Aadish: Change Motor Direction
-Aadish->>Aadish: Motor Direction Changed<br>(Trash)
-loop Every Second
-  Shaurya->>Aadish: Update Motor Speed
-  Aadish->>Aadish: Motor Speed Updated<br>(Trash)
-end
-Shaurya->>Aadish: Rotational Velocity
-Aadish->>Baron: Rotational Velocity
-Baron->>Bruce: Rotational Velocity
-actor Web User
-Baron-->>Web User: Display Rotational Velocity
-Bruce-->>In-Person User: Display Rotational Velocity
-actor Web User
-Web User-->>Baron: Change Motor Direction
-Baron->>Shaurya: Change Motor Direction
-Shaurya->>Aadish: Change Motor Direction
-Aadish->>Aadish: Motor Direction Changed<br>(Trash)
+participant Bruce
+participant Baron
+actor MQTT
+In-Person User->>Bruce: Toggle Motor
+Bruce-->>MQTT: Toggle Motor
+MQTT-->>Baron: Toggle Motor
+Baron->>Baron: Motor Toggled<br>(Trash)
+MQTT-->>Baron: Toggle Motor
+Baron->>Baron: Motor Toggled<br>(Trash)
 ```
+>Edit: UART communication was supposed to happen between Baron and the old team 309 members. However, with team 309B, only the mqtt server will be used for communication. Due to the nature of the project, it makes more sense to communicate over wifi rather than uart.
 
 ## Message Structure
 
@@ -50,8 +34,6 @@ Each user has been assigned a user ID to make communication easier between users
 |---|---|
 | M | Bruce |
 | B | Baron |
-| A | Aadish |
-| S | Shaurya |
 
 ### Message Types
 
@@ -59,9 +41,7 @@ The message types are defined by the Process Diagram. Our Process Diagram only h
 
 | Message Type | Description |
 |---|---|
-| 1 | Change Motor Direction |
-| 2 | Update Motor Speed |
-| 3 | Rotational Velocity |
+| 1 | Toggle Motor |
 
 ### Message Variations
 
@@ -69,11 +49,8 @@ While message types are meant to define each message in the Process Diagram, the
 
 | Message Type | Variations | ID |
 |---|---|---|
-| 1 | Motor Direction Forward | 0x0040 |
-| 1 | Motor Direction Reverse | 0x0041 |
-| 2 | Motor Speed Increase | 0x0042 |
-| 2 | Motor Speed Decrease | 0x0043 |
-| 3 | Rotational Velocity | Varies |
+| 1 | Motor Start | 0x0040 |
+| 1 | Motor Stop | 0x0041 |
 
 ### Messages Structure
 
@@ -84,6 +61,7 @@ This is a breakdown of how serial messages will be sent. It shows each byte in a
 
 | Message Type | Byte 1-2 (Prefix)<br>(uint16_t) | Byte 3 (Sender ID)<br>(uint8_t) | Byte 4 (Reciever ID)<br>(uint8_t) | Byte 5-6 (Data)<br>(uint16_t) | Byte 7-8 (Suffix)<br>(uint16_t) |
 |---|---|---|---|---|---|
-| 1 | AZ | Bruce | Aadish | Motor Direction X | YB |
-| 2 | AZ | Shaurya | Aadish | Motor Speed X | YB |
-| 3 | AZ | Shaurya | Bruce | Rotational Velocity | YB |
+| 1 | AZ | Bruce | Baron | Motor Start | YB |
+| 1 | AZ | Bruce | Baron | Motor Stop | YB |
+
+>Edit: The bulk of out messages got removed when transfering to team 309B. We no longer have an offical sensor or actuator system so this is the best we could do in the time we had
