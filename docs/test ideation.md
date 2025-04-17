@@ -2,6 +2,58 @@
 title: Ideation and Concept Generation
 ---
 
+<style>
+  /* Container to hold idea cards */
+.idea-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+/* Card style for each idea */
+.idea-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for the cards */
+.idea-card:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Category cards to organize the different sections */
+.category-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+  .idea-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  /* Other styles go here */
+</style>
+
+
 ## About Our Exhibit
 
 Goal of our Exhibit
