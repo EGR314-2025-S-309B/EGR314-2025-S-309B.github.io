@@ -9,6 +9,8 @@ tags:
 
 This website provides documentation for an embedded systems project. The project is a spinning top designed to provide a fun and interesting way to get high school students interested in STEM. This website is meant to document the ideas and decision making process of our team throughout the projects timeline. We also have individual websites to document our individual systems and provide more information for each section of our project.
 
+![Image](https://github.com/user-attachments/assets/acc56437-457a-4e2a-a384-14b4a3fd1d1c)
+
 - [Baron Website - MQTT](https://scoon04.github.io/)
 - [Bruce Website - HMI](https://ibmyers2.github.io/EGR314_Team309_IBM/)
 
