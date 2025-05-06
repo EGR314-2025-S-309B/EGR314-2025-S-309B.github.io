@@ -468,12 +468,38 @@
     Block Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-diagram-decision-making-process" class="md-nav__link">
+    Block Diagram Decision Making Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#process-diagram" class="md-nav__link">
     Process Diagram
   </a>
+  
+    <nav class="md-nav" aria-label="Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-diagram-decision-making-process" class="md-nav__link">
+    Process Diagram Decision Making Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -513,8 +539,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#message-structure-decision-making-process" class="md-nav__link">
+    Message Structure Decision Making Process
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-5-changes" class="md-nav__link">
+    Top 5 Changes
+  </a>
   
 </li>
       
@@ -669,12 +709,38 @@
     Block Diagram
   </a>
   
+    <nav class="md-nav" aria-label="Block Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#block-diagram-decision-making-process" class="md-nav__link">
+    Block Diagram Decision Making Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#process-diagram" class="md-nav__link">
     Process Diagram
   </a>
+  
+    <nav class="md-nav" aria-label="Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-diagram-decision-making-process" class="md-nav__link">
+    Process Diagram Decision Making Process
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -714,8 +780,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#message-structure-decision-making-process" class="md-nav__link">
+    Message Structure Decision Making Process
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-5-changes" class="md-nav__link">
+    Top 5 Changes
+  </a>
   
 </li>
       
@@ -747,6 +827,8 @@
 
 <h2 id="block-diagram">Block Diagram</h2>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/4ef2de21-2632-4618-a25a-40dea04b6c11" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="https://github.com/user-attachments/assets/4ef2de21-2632-4618-a25a-40dea04b6c11" /></a></p>
+<h3 id="block-diagram-decision-making-process">Block Diagram Decision Making Process</h3>
+<p>This block diagram allows for both devices to be powered, programmed, and communicate to one another. It meets all the class requirements for things like uart and power but also fits our projects unique MQTT requirements. It also has some basic debug components for testing.</p>
 <h2 id="process-diagram">Process Diagram</h2>
 <pre class="mermaid"><code>sequenceDiagram
 autonumber
@@ -763,6 +845,8 @@ Baron-&gt;&gt;Baron: Motor Toggled&lt;br&gt;(Trash)</code></pre>
 <blockquote>
 <p>Edit: UART communication was supposed to happen between Baron and the old team 309 members. However, with team 309B, only the mqtt server will be used for communication. Due to the nature of the project, it makes more sense to communicate over wifi rather than uart.</p>
 </blockquote>
+<h3 id="process-diagram-decision-making-process">Process Diagram Decision Making Process</h3>
+<p>This semester emphasises uart communication so boards can interact with one another. Our project uses MQTT for communication, but uart is still a backup. This diagram allows us to send any data we could recieve to where it needs to go and it allows in person and web users to interact with it.</p>
 <h2 id="message-structure">Message Structure</h2>
 <h3 id="ids">IDs</h3>
 <p>Each user has been assigned a user ID to make communication easier between users. Any messages sent will contain the sender and reciever ID to identify where its coming from and where its going to. Below is a list of IDs for each user in our project</p>
@@ -862,6 +946,29 @@ Baron-&gt;&gt;Baron: Motor Toggled&lt;br&gt;(Trash)</code></pre>
 <blockquote>
 <p>Edit: The bulk of out messages got removed when transfering to team 309B. We no longer have an offical sensor or actuator system so this is the best we could do in the time we had</p>
 </blockquote>
+<h3 id="message-structure-decision-making-process">Message Structure Decision Making Process</h3>
+<p>This was the most customizable part of our project. We needed a way to send data to one another, know where its comming from, and who its going to. To do this we defined the start and end of a message with 2 bytes. This will tell the board when a message is being recieved. Within this message is bytes of data that define the sender, reciever, and data. This is always in the same location in the message to its easy to identify what is where. This message structure allows us to identify bad messages and messages that arent meant for a specific board so they can be passed on.</p>
+<h2 id="top-5-changes">Top 5 Changes</h2>
+<ul>
+<li>Prefix and suffix</li>
+</ul>
+<p>The prefix and suffix used to be different per message type. We later realized that its easier to make any message prefix and suffix the same and identify the message type by the sender becuase each message type only comes from one specific sender.</p>
+<ul>
+<li>Amount of messages</li>
+</ul>
+<p>Because our team split last minute, we had to remove a handful of message types that werent going to be used. This cut down on the message types by quite a bit</p>
+<ul>
+<li>Data Storing</li>
+</ul>
+<p>We used to store the 2 byte data types in 2 seperate variables, but later we realized this is a bad idea because it makes things harder to manage. Plus it was completely unnecessary because 1 variable can store more than 1 byte. So we changed it to exactly that. We now store multiple bytes of data in one variable and then run a data.to.bytes command to convert it for sending.</p>
+<ul>
+<li>Data length</li>
+</ul>
+<p>We currently use 2 bytes to store data. This was because the rotational velocity was going to be 2 bytes long, but now we dont have that sensor so we would ideally make the new data only 1 byte long because thats all we need.</p>
+<ul>
+<li>Sender and Reciever Length</li>
+</ul>
+<p>We were originally going to send full names as the sender and reciever bytes. We realized this is impractical becuase it would either require converting it to hex or binary, or it would take more than 1 byte. So we make it one letter as the identifier so now its easier to send that data.</p>
 
 
 
