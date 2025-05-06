@@ -18,3 +18,13 @@ Throughout working on this project, there are many key things we learned, both f
 3.  __Utilize help from the teaching team.__ The teachers for the class have been operating the class for years and have seen many of the pitfalls you may fall into while working through the project. Not only that, but the TAs have also taken the class and know the frustrations you may be facing. Communicating with the teaching team often will help you immensely while working through the project.
 4.  __Document everything.__ Many issues will pop up as you work through making your system. Make sure to track every step of your project as you work through it so you always have something to refer back to.
 5.  __Lastly, learn to take your time.__ Especially in as intensive a class as EGR304/314, it can be easy to become frustrated and make stupid mistakes. Learn to breathe, take a step back, and take a calm and composed approach to whatever issues you may be facing.
+
+## Version 2.0
+
+If we were to make a Version 2.0 of our system, one of the biggest things to fix is the MQTT communication. It mostly works, but it can get kinda sketchy when the Wi-Fi isn’t great or things get busy.
+
+Right now we’re using MQTT to send stuff like spin data to the dashboard. It’s light and fast, which is great, but it can drop stuff or just not send if the connection glitches. In version 2.0, we’d try a few things to make it better. We would definitly make it reconnect by itself if it disconnects. Also having it store messages when it’s offline would be useful. Split the messages into different “topics” for sensor data, motor direction data, etc.
+
+We would also want to add back the gyroscope sensor we were going to use before. This would allow for more control of the top rather than just an on and off. 
+
+Finnaly, some more physical indicators would be useful to show whats happening. Right now, nothing really shows whent he motor is supposed to be on or off or what speed its at. Having audio or led indicators would make it easier to show what the device is trying to do rather than relying on what we think its doing.
